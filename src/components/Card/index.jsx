@@ -1,14 +1,14 @@
 export const Card = ({ title, img, description, link }) => {
     return (
-        <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg flex flex-col max-w-[280px] mx-auto">
-            <div className="w-full overflow-hidden">
+        <section className="bg-gray-100 rounded-xl overflow-hidden shadow-lg flex flex-col max-w-[280px] mx-auto">
+            <figure className="w-full overflow-hidden">
                 <img
                     src={img}
                     alt={title}
                     className="w-full h-48 object-cover"
                 />
-            </div>
-            <div className="p-4 flex-grow">
+            </figure>
+            <article className="p-4 flex-grow">
                 <h2 className="text-xl font-bold mb-2 text-red-600">{title}</h2>
                 <p className="text-gray-700 mb-4">
                     {description}
@@ -21,7 +21,7 @@ export const Card = ({ title, img, description, link }) => {
                 >
                     Instagram
                 </a>
-            </div>
-        </div>
+            </article>
+        </section>
     )
 }
